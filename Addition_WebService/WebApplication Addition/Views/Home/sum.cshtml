@@ -1,0 +1,17 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+	ViewBag.Title = "Sum Page";
+}
+<h1>SUMMATION OF NUMBERS</h1>
+
+<form asp-controller="Home" asp-action="add" method="post">
+
+	<span> Number(1) : </span> <input id="Text1" type="text" name="First" /> <br/><br/>
+	<span> Number(2) : </span> <input id="Text1" type="text" name="Second" /> <br/><br/>
+	<span>Number(3) : </span> <input id="Text1" type="text" name="Third" /> <br/><br/>
+	<input id="Submit1" type="submit" value="Add" />
+</form>
+
+<h2>@ViewBag.SumResult</h2>
